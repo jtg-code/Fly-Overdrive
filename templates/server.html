@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='server.css') }}">
+    <title>Fly Overdrive</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="mainHeader">Servermenü</h1>
+    <div>
+        <p id="data">
+            <span id="playerName">Name: {{ data.name }}</span><img id="Profilepicture" src={{ data.user.avatar_url }} alt="discord Profilepicture">
+        </p>
+        <p>
+            <form id="carSelect" method="post" action="#">
+                {% for car in data.cars %}
+                    <label for={{ car }}>{{ car }}</label>
+                    <input type="checkbox" name={{ car }} id="carSelectBox"><br>
+                {% endfor %}
+                <button name="submit" type="submit">Fahrzeug wählen</button>
+            </form>
+        </p>
+    </div>
+</body>
+</html>

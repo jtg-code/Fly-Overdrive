@@ -1,0 +1,8 @@
+inputs
+keyboard
+bleak
+asyncio
+flask
+pypresence
+discord
+zenora
