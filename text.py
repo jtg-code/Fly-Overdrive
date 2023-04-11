@@ -1,6 +1,5 @@
 def run():
+  print(discord.commands)
   print("Custom function")
-  return "This is a custom code"
-
 
 run()
