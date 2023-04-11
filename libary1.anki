@@ -1,0 +1,2 @@
+function myPrint(text):
+    print(text)
