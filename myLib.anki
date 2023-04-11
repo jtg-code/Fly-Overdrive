@@ -1,2 +1,0 @@
-function myPrint(text):
-    console.log(text)
