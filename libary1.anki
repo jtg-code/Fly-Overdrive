@@ -1,2 +1,2 @@
 function myPrint(text):
-    print(text)
+    console.log(text)
