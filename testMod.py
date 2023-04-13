@@ -1,3 +1,5 @@
-#include testLib
+#controller
+#client 
+#app
 
-test("button pressed")
+client.sendServer(data={"function": "customMod", "text": "print this text"})
