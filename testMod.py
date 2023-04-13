@@ -1,3 +1,3 @@
 #include testLib
 
-print("button pressed")
+test("button pressed")
