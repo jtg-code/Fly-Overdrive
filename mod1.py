@@ -1,3 +1,3 @@
-#libary myLib
+#include customLib
 
-myPrint(message.content)
+myPrint(args["text"])
